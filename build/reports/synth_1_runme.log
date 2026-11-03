@@ -1,0 +1,1043 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1454.352 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top Top_Module -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22484
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1454.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Tx_Module' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Tx_Module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (2#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71235]
+	Parameter IOSTANDARD bound to: LVDS - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (3#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71235]
+INFO: [Synth 8-6157] synthesizing module 'saw_chirp_baseband' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/saw_chirp_baseband.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cos_ph' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/cos_ph_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cos_ph' (4#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/cos_ph_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_chirp_baseband' (5#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/saw_chirp_baseband.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Tx_Module' (6#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Tx_Module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ad_iobuf' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/ad_iobuf.v:42]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_iobuf' (7#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/ad_iobuf.v:42]
+INFO: [Synth 8-6157] synthesizing module 'Data_Receive' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Frame_Head_Check' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Frame_Head_Check.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Frame_Head_Check' (8#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Frame_Head_Check.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Kf_Data' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Kf_Data.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Kf_Data' (9#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Kf_Data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCM_Period_Data' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/PCM_Period_Data.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCM_Period_Data' (10#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/PCM_Period_Data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCM_Rate_Data' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/PCM_Rate_Data.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCM_Rate_Data' (11#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/PCM_Rate_Data.v:3]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PCM_Rate_Data_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:48]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PCM_Period_Data_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:39]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Kf_Data_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:30]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Frame_Head_Check_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Receive' (12#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Data_Receive.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Saw_Bram_Control' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Bram_Control.v:3]
+	Parameter CAPTURE_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Saw_Bram_Control' (13#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Bram_Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Saw_Rx_Capture' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:3]
+	Parameter RX_BUFFER_DEPTH bound to: 65536 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55219]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: LVDS - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (14#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55219]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (15#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'Ad9361_Rx_1R1T_Decoder' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Ad9361_Rx_1R1T_Decoder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Ad9361_Rx_1R1T_Decoder' (16#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Ad9361_Rx_1R1T_Decoder.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:263]
+INFO: [Synth 8-6157] synthesizing module 'ila_rx_debug' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/ila_rx_debug_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_rx_debug' (17#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/ila_rx_debug_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_rx_debug_inst'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:263]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'decoder'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:233]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IBUFDS_RX_FRAME'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:183]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IDDR_RX_FRAME'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:222]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[5].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[4].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[3].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[2].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[1].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX_LVDS[0].IDDR_RX_DATA'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'Saw_Rx_Capture' (18#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Saw_Rx_Capture.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:264]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (19#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'System_wrapper' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/hdl/System_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'System' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:13]
+INFO: [Synth 8-6157] synthesizing module 'System_axi_bram_ctrl_0_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_axi_bram_ctrl_0_0' (20#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'System_axi_gpio_0_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_axi_gpio_0_0' (21#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'System_axi_smc_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_axi_smc_0' (22#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'System_axi_smc_0' is unconnected for instance 'axi_smc' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:310]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'System_axi_smc_0' is unconnected for instance 'axi_smc' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:310]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'System_axi_smc_0' is unconnected for instance 'axi_smc' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:310]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'System_axi_smc_0' is unconnected for instance 'axi_smc' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:310]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'System_axi_smc_0' has 92 connections declared, but only 88 given [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:310]
+INFO: [Synth 8-6157] synthesizing module 'System_processing_system7_0_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_processing_system7_0_0' (23#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'SPI0_SCLK_T' of module 'System_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+WARNING: [Synth 8-7071] port 'SPI0_MOSI_T' of module 'System_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+WARNING: [Synth 8-7071] port 'SPI0_MISO_O' of module 'System_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+WARNING: [Synth 8-7071] port 'SPI0_MISO_T' of module 'System_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+WARNING: [Synth 8-7071] port 'SPI0_SS_T' of module 'System_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'System_processing_system7_0_0' has 79 connections declared, but only 74 given [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:399]
+INFO: [Synth 8-6157] synthesizing module 'System_rst_ps7_0_100M_0' [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_rst_ps7_0_100M_0' (24#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/.Xil/Vivado-27168-DESKTOP-AAS710N/realtime/System_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'System_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:474]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'System_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:474]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'System_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:474]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'System_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:474]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'System_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'System' (25#1) [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/synth/System.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'System_wrapper' (26#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/hdl/System_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0_inst'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:264]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Tx_Module_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:144]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Saw_Bram_Control_inst0'. This will prevent further optimization [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (27#1) [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/sources_1/new/Top_Module.v:3]
+WARNING: [Synth 8-7129] Port bram_addr[1] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addr[0] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[15] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[14] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[13] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[12] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[11] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[10] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[9] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[8] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[15] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[14] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[13] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[12] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[11] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[10] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[9] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[8] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[20] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[19] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[18] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[17] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[16] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[15] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[14] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[13] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[12] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[11] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[10] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[9] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[8] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[7] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[6] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[5] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[4] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[3] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[2] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[1] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[0] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[23] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[22] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[21] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[20] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[19] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[18] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[17] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[16] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[15] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[14] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[13] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[12] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[11] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[10] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[9] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[8] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[7] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[6] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[5] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[4] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[3] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[2] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[1] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_period[0] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[15] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[14] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[13] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[12] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[11] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[10] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[9] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[8] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[7] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[6] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[5] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[4] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[3] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[2] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[1] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port modu_coff[0] in module Tx_Module is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1488.148 ; gain = 33.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1488.148 ; gain = 33.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1488.148 ; gain = 33.797
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1488.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/processing_system7_0'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/processing_system7_0'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_rst_ps7_0_100M_0/System_rst_ps7_0_100M_0/System_rst_ps7_0_100M_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/rst_ps7_0_100M'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_rst_ps7_0_100M_0/System_rst_ps7_0_100M_0/System_rst_ps7_0_100M_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/rst_ps7_0_100M'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_bram_ctrl_0_0/System_axi_bram_ctrl_0_0/System_axi_bram_ctrl_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_bram_ctrl_0_0/System_axi_bram_ctrl_0_0/System_axi_bram_ctrl_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_bram_ctrl_0'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0/System_axi_gpio_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_gpio_0'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0/System_axi_gpio_0_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_gpio_0'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_smc_0/System_axi_smc_0/System_axi_smc_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_smc'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_axi_smc_0/System_axi_smc_0/System_axi_smc_0_in_context.xdc] for cell 'System_wrapper_inst0/System_i/axi_smc'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/cos_ph/cos_ph/cos_ph_in_context.xdc] for cell 'Tx_Module_inst0/saw_chirp_baseband_inst0/cos_ph'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/cos_ph/cos_ph/cos_ph_in_context.xdc] for cell 'Tx_Module_inst0/saw_chirp_baseband_inst0/cos_ph'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/cos_ph/cos_ph/cos_ph_in_context.xdc] for cell 'Saw_Rx_Capture_inst0/rx_frequency_nco'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/cos_ph/cos_ph/cos_ph_in_context.xdc] for cell 'Saw_Rx_Capture_inst0/rx_frequency_nco'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_0_inst'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_0_inst'
+Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/ila_rx_debug/ila_rx_debug/ila_rx_debug_in_context.xdc] for cell 'Saw_Rx_Capture_inst0/ila_rx_debug_inst'
+Finished Parsing XDC File [f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/ila_rx_debug/ila_rx_debug/ila_rx_debug_in_context.xdc] for cell 'Saw_Rx_Capture_inst0/ila_rx_debug_inst'
+Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Simulator.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_in_p' already exists, overwriting the previous clock with the same name. [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Simulator.xdc:2]
+Finished Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Simulator.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Simulator.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Debug.xdc]
+Finished Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.srcs/constrs_1/new/Debug.xdc]
+Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1610.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1610.340 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila_0_inst' at clock pin 'clk' is different from the actual clock period '8.138', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'Saw_Rx_Capture_inst0/ila_rx_debug_inst' at clock pin 'clk' is different from the actual clock period '8.138', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'Saw_Rx_Capture_inst0/rx_frequency_nco' at clock pin 'aclk' is different from the actual clock period '8.138', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'Tx_Module_inst0/saw_chirp_baseband_inst0/cos_ph' at clock pin 'aclk' is different from the actual clock period '16.276', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1615.305 ; gain = 160.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1615.305 ; gain = 160.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0/System_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in_n. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in_p. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in_p. (constraint file  f:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_wrapper_inst0/System_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clock. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Tx_Module_inst0/saw_chirp_baseband_inst0/cos_ph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Saw_Rx_Capture_inst0/rx_frequency_nco. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Saw_Rx_Capture_inst0/ila_rx_debug_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1615.305 ; gain = 160.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1615.305 ; gain = 160.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   65 Bit       Adders := 2     
+	   2 Input   48 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 1     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   13 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 17    
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 35    
++---Multipliers : 
+	              32x32  Multipliers := 2     
+	               8x32  Multipliers := 2     
++---RAMs : 
+	              24K Bit	(128 X 192 bit)          RAMs := 1     
+	              832 Bit	(64 X 13 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 4     
+	   8 Input   64 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 6     
+	   8 Input   48 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 16    
+	   8 Input   32 Bit        Muxes := 3     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 6     
+	   8 Input   17 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 6     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 79    
+	   5 Input    1 Bit        Muxes := 4     
+	  11 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 8     
+	   8 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP saw_chirp_baseband_inst0/indexed_phase_inc0, operation Mode is: A*B.
+DSP Report: operator saw_chirp_baseband_inst0/indexed_phase_inc0 is absorbed into DSP saw_chirp_baseband_inst0/indexed_phase_inc0.
+DSP Report: operator saw_chirp_baseband_inst0/indexed_phase_inc0 is absorbed into DSP saw_chirp_baseband_inst0/indexed_phase_inc0.
+DSP Report: Generating DSP saw_chirp_baseband_inst0/indexed_phase_inc0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator saw_chirp_baseband_inst0/indexed_phase_inc0 is absorbed into DSP saw_chirp_baseband_inst0/indexed_phase_inc0.
+DSP Report: operator saw_chirp_baseband_inst0/indexed_phase_inc0 is absorbed into DSP saw_chirp_baseband_inst0/indexed_phase_inc0.
+DSP Report: Generating DSP product_q_cos_reg, operation Mode is: (A*B)'.
+DSP Report: register product_q_cos_reg is absorbed into DSP product_q_cos_reg.
+DSP Report: operator product_q_cos0 is absorbed into DSP product_q_cos_reg.
+DSP Report: Generating DSP mixed_q_reg, operation Mode is: (PCIN-(A*B)')'.
+DSP Report: register mixed_q_reg is absorbed into DSP mixed_q_reg.
+DSP Report: register product_i_sin_reg is absorbed into DSP mixed_q_reg.
+DSP Report: operator mixed_q0 is absorbed into DSP mixed_q_reg.
+DSP Report: operator product_i_sin0 is absorbed into DSP mixed_q_reg.
+DSP Report: Generating DSP energy_q_square0, operation Mode is: A2*B2.
+DSP Report: register energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: register energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: Generating DSP energy_q_square_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square_reg.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square_reg.
+DSP Report: Generating DSP energy_q_square0, operation Mode is: A2*B2.
+DSP Report: register energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: register energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square0.
+DSP Report: Generating DSP energy_q_square_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: register energy_q_square_reg is absorbed into DSP energy_q_square_reg.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square_reg.
+DSP Report: operator energy_q_square0 is absorbed into DSP energy_q_square_reg.
+DSP Report: Generating DSP product_i_cos_reg, operation Mode is: (A*B)'.
+DSP Report: register product_i_cos_reg is absorbed into DSP product_i_cos_reg.
+DSP Report: operator product_i_cos0 is absorbed into DSP product_i_cos_reg.
+DSP Report: Generating DSP mixed_i_reg, operation Mode is: (PCIN+(A*B)')'.
+DSP Report: register mixed_i_reg is absorbed into DSP mixed_i_reg.
+DSP Report: register product_q_sin_reg is absorbed into DSP mixed_i_reg.
+DSP Report: operator mixed_i0 is absorbed into DSP mixed_i_reg.
+DSP Report: operator product_q_sin0 is absorbed into DSP mixed_i_reg.
+DSP Report: Generating DSP energy_i_square0, operation Mode is: A2*B2.
+DSP Report: register energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: register energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: Generating DSP energy_i_square_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square_reg.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square_reg.
+DSP Report: Generating DSP energy_i_square0, operation Mode is: A2*B2.
+DSP Report: register energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: register energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square0.
+DSP Report: Generating DSP energy_i_square_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: register energy_i_square_reg is absorbed into DSP energy_i_square_reg.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square_reg.
+DSP Report: operator energy_i_square0 is absorbed into DSP energy_i_square_reg.
+DSP Report: Generating DSP indexed_phase_product, operation Mode is: A*B.
+DSP Report: operator indexed_phase_product is absorbed into DSP indexed_phase_product.
+DSP Report: operator indexed_phase_product is absorbed into DSP indexed_phase_product.
+DSP Report: Generating DSP indexed_phase_product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator indexed_phase_product is absorbed into DSP indexed_phase_product.
+DSP Report: operator indexed_phase_product is absorbed into DSP indexed_phase_product.
+WARNING: [Synth 8-7129] Port bram_addr[1] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addr[0] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[15] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[14] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[13] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[12] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[11] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[10] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[9] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port coherent_count[8] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[15] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[14] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[13] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[12] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[11] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[10] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[9] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port noncoherent_count[8] in module Saw_Bram_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[20] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[19] in module Tx_Module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcm_rate[18] in module Tx_Module is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[47]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[46]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[45]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[44]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[43]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[42]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[41]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[40]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[39]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[38]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[37]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[36]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[35]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[34]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[33]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[32]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[31]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[30]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[29]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[28]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[27]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[26]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[25]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[24]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[23]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[22]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[21]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[20]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[19]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[18]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[17]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[47]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[46]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[45]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[44]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[43]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[42]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[41]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[40]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[39]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[38]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[37]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[36]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[35]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[34]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[33]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[32]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[31]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[30]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[29]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[28]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[27]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[26]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[25]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[24]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[23]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[22]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[21]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[20]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[19]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[18]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_q_square_reg[17]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[47]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[46]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[45]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[44]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[43]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[42]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[41]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[40]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[39]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[38]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[37]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[36]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[35]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[34]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[33]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[32]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[31]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[30]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[29]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[28]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[27]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[26]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[25]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[24]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[23]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[22]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[21]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[20]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[19]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[18]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[17]) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[47]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[46]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[45]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[44]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[43]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[42]__0) is unused and will be removed from module Saw_Rx_Capture.
+WARNING: [Synth 8-3332] Sequential element (energy_i_square_reg[41]__0) is unused and will be removed from module Saw_Rx_Capture.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1615.305 ; gain = 160.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+-------------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-------------------+-----------+----------------------+---------------+
+|Saw_Rx_Capture_inst0 | sample_i_fifo_reg | Implied   | 64 x 13              | RAM64M x 5    | 
+|Saw_Rx_Capture_inst0 | sample_q_fifo_reg | Implied   | 64 x 13              | RAM64M x 5    | 
+|Saw_Rx_Capture_inst0 | capture_mem_reg   | Implied   | 128 x 192            | RAM64M x 128  | 
++---------------------+-------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Tx_Module      | A*B              | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Tx_Module      | (PCIN>>17)+A*B   | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (A*B)'           | 13     | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|Saw_Rx_Capture | (PCIN-(A*B)')'   | 13     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|Saw_Rx_Capture | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Saw_Rx_Capture | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Saw_Rx_Capture | (A*B)'           | 13     | 12     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|Saw_Rx_Capture | (PCIN+(A*B)')'   | 13     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|Saw_Rx_Capture | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Saw_Rx_Capture | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Saw_Rx_Capture | A*B              | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Saw_Rx_Capture | (PCIN>>17)+A*B   | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_in_p'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1618.316 ; gain = 163.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1713.191 ; gain = 258.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------+-------------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-------------------+-----------+----------------------+---------------+
+|Saw_Rx_Capture_inst0 | sample_i_fifo_reg | Implied   | 64 x 13              | RAM64M x 5    | 
+|Saw_Rx_Capture_inst0 | sample_q_fifo_reg | Implied   | 64 x 13              | RAM64M x 5    | 
+|Saw_Rx_Capture_inst0 | capture_mem_reg   | Implied   | 128 x 192            | RAM64M x 128  | 
++---------------------+-------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1718.629 ; gain = 264.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |cos_ph                        |         2|
+|2     |ila_rx_debug                  |         1|
+|3     |clk_wiz_0                     |         1|
+|4     |ila_0                         |         1|
+|5     |System_axi_bram_ctrl_0_0      |         1|
+|6     |System_axi_gpio_0_0           |         1|
+|7     |System_axi_smc_0              |         1|
+|8     |System_processing_system7_0_0 |         1|
+|9     |System_rst_ps7_0_100M_0       |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |System_axi_bram_ctrl_0      |     1|
+|2     |System_axi_gpio_0           |     1|
+|3     |System_axi_smc              |     1|
+|4     |System_processing_system7_0 |     1|
+|5     |System_rst_ps7_0_100M       |     1|
+|6     |clk_wiz                     |     1|
+|7     |cos_ph                      |     2|
+|9     |ila                         |     1|
+|10    |ila_rx_debug                |     1|
+|11    |CARRY4                      |   228|
+|12    |DSP48E1                     |    16|
+|17    |IDDR                        |     7|
+|18    |LUT1                        |   180|
+|19    |LUT2                        |   674|
+|20    |LUT3                        |   161|
+|21    |LUT4                        |   293|
+|22    |LUT5                        |   134|
+|23    |LUT6                        |   348|
+|24    |MUXF7                       |     9|
+|25    |ODDR                        |     6|
+|26    |RAM64M                      |    95|
+|27    |FDRE                        |  1021|
+|28    |FDSE                        |    32|
+|29    |IBUF                        |     1|
+|30    |IBUFDS                      |     7|
+|31    |IOBUF                       |     1|
+|32    |OBUF                        |     7|
+|33    |OBUFDS                      |     8|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 205 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1722.320 ; gain = 140.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1722.320 ; gain = 267.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1730.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM64M => RAM64M (RAMD64E(x4)): 95 instances
+
+Synth Design complete, checksum: a951c44b
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1752.648 ; gain = 298.297
+INFO: [Common 17-1381] The checkpoint 'F:/CCS_v10_WP/SAW/AD9361/Single_Channel_Simulator/Single_Channel_Simulator.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 18:46:56 2026...

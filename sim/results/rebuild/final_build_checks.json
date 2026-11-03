@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "full_build_entry": "python tools/build_all.py --work-dir C:/saw_build",
+  "pl_build_passed": true,
+  "ps_build_passed": true,
+  "paired_xsa_bit_verified": true,
+  "current_build_entry_hashes_verified": true,
+  "application_load_binary_sha256": {
+    "ps": "3313cfede6eddf2ab6fc60624ef8530e7aedd561d0bdd50f38b2e0aee9f7f74b",
+    "ps_from_pl": "3313cfede6eddf2ab6fc60624ef8530e7aedd561d0bdd50f38b2e0aee9f7f74b"
+  },
+  "original_source_firmware_data_files_verified": 376,
+  "pl_stage": "E:\\sw\\pl_r80htknk",
+  "ps_stage": "E:\\sw\\ps_0km54kjc",
+  "paired_ps_stage": "E:\\sw\\ps_ne6cvmm2"
+}

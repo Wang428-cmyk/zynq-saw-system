@@ -1,0 +1,92 @@
+{
+  "active": false,
+  "state": "stopped",
+  "message": "扫描配置已改变，当前稳定度任务已结束",
+  "session_id": "20260813_154956_5378a8",
+  "session_path": "F:\\CCS_v10_WP\\SAW\\AD9361\\SAW_Upper_Computer\\StabilityData\\20260813_154956_5378a8",
+  "target_rounds": 1000,
+  "completed_rounds": 681,
+  "progress_percent": 68.1,
+  "started_at": "2026-08-13T15:49:56.086+08:00",
+  "finished_at": "2026-08-13T15:56:38.582+08:00",
+  "writer_pending": 0,
+  "writer_error": null,
+  "tracks": [
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 433883704.1017629,
+      "last_frequency_hz": 434089476.50578743,
+      "metrics": {
+        "valid_count": 492,
+        "total_count": 681,
+        "valid_rate_percent": 72.2466960352423,
+        "frequency_mean_hz": 433902047.40011626,
+        "frequency_std_hz": 62788.13640467089,
+        "frequency_pp_hz": 251577.41273987293,
+        "frequency_std_ppm": 144.7057850519238,
+        "drift_hz_per_min": 24024.46467396608,
+        "max_jump_hz": 187579.57846802473,
+        "power_mean_dbm": -69.74434197670428,
+        "power_std_db": 3.0264952556525198,
+        "power_pp_db": 26.341895442917604
+      }
+    },
+    {
+      "track_id": 2,
+      "reference_frequency_hz": 435098000.0,
+      "last_frequency_hz": 434938797.22118247,
+      "metrics": {
+        "valid_count": 60,
+        "total_count": 681,
+        "valid_rate_percent": 8.810572687224669,
+        "frequency_mean_hz": 434901066.454524,
+        "frequency_std_hz": 41280.000979275195,
+        "frequency_pp_hz": 297000.0,
+        "frequency_std_ppm": 94.91814153459129,
+        "drift_hz_per_min": -14870.83590588498,
+        "max_jump_hz": 183363.8724835515,
+        "power_mean_dbm": -63.21927338874063,
+        "power_std_db": 7.683543348729861,
+        "power_pp_db": 43.00718209294855
+      }
+    },
+    {
+      "track_id": 3,
+      "reference_frequency_hz": 436867210.9466638,
+      "last_frequency_hz": 436905000.0,
+      "metrics": {
+        "valid_count": 59,
+        "total_count": 681,
+        "valid_rate_percent": 8.66372980910426,
+        "frequency_mean_hz": 436899535.5846036,
+        "frequency_std_hz": 11809.7649388346,
+        "frequency_pp_hz": 59139.120845377445,
+        "frequency_std_ppm": 27.030848002693045,
+        "drift_hz_per_min": 2190.7950399461715,
+        "max_jump_hz": 59139.120845377445,
+        "power_mean_dbm": -51.950914830256515,
+        "power_std_db": 7.453233414011803,
+        "power_pp_db": 36.930236126332986
+      }
+    },
+    {
+      "track_id": 4,
+      "reference_frequency_hz": 435374333.936547,
+      "last_frequency_hz": 435349736.2353054,
+      "metrics": {
+        "valid_count": 10,
+        "total_count": 681,
+        "valid_rate_percent": 1.4684287812041117,
+        "frequency_mean_hz": 435366915.59950274,
+        "frequency_std_hz": 11439.591492296495,
+        "frequency_pp_hz": 26354.16869711876,
+        "frequency_std_ppm": 26.275748299670663,
+        "drift_hz_per_min": -52482.78140251305,
+        "max_jump_hz": 24343.73354882002,
+        "power_mean_dbm": -62.57817811645632,
+        "power_std_db": 4.683528654783577,
+        "power_pp_db": 10.743117756716927
+      }
+    }
+  ]
+}

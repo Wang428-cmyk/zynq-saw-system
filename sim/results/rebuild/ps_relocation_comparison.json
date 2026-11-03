@@ -1,0 +1,9 @@
+{
+  "first_stage": "E:\\saw_build_validation\\ps_attempts\\ps_o5qfeh4i",
+  "relocated_package_root": "E:\\saw_release_validation\\run_20261103_122550\\unpacked\\zynq-saw-system",
+  "relocation_build_passed": true,
+  "first_load_binary_sha256": "3313cfede6eddf2ab6fc60624ef8530e7aedd561d0bdd50f38b2e0aee9f7f74b",
+  "relocated_load_binary_sha256": "3313cfede6eddf2ab6fc60624ef8530e7aedd561d0bdd50f38b2e0aee9f7f74b",
+  "load_binaries_identical": true,
+  "note": "Application loadable binary compared with arm-none-eabi-objcopy -O binary; debug ELF paths may differ."
+}

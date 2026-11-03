@@ -1,0 +1,35 @@
+{
+  "active": false,
+  "state": "stopped",
+  "message": "用户停止",
+  "session_id": "20260812_152100_28ae59",
+  "session_path": "F:\\CCS_v10_WP\\SAW\\AD9361\\SAW_Upper_Computer\\StabilityData\\20260812_152100_28ae59",
+  "target_rounds": 1000,
+  "completed_rounds": 39,
+  "progress_percent": 3.9,
+  "started_at": "2026-08-12T15:21:00.665+08:00",
+  "finished_at": "2026-08-12T15:21:25.365+08:00",
+  "writer_pending": 0,
+  "writer_error": null,
+  "tracks": [
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 433896222.5840857,
+      "last_frequency_hz": 433896891.9770594,
+      "metrics": {
+        "valid_count": 39,
+        "total_count": 39,
+        "valid_rate_percent": 100.0,
+        "frequency_mean_hz": 433897298.5513275,
+        "frequency_std_hz": 2195.1187962981767,
+        "frequency_pp_hz": 9174.898990809917,
+        "frequency_std_ppm": 5.059074586606367,
+        "drift_hz_per_min": -3124.276459072706,
+        "max_jump_hz": 7392.253116130829,
+        "power_mean_dbm": -69.67210254062088,
+        "power_std_db": 0.12248089158139688,
+        "power_pp_db": 0.47706886914681945
+      }
+    }
+  ]
+}

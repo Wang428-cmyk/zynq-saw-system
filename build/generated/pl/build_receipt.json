@@ -1,0 +1,17 @@
+{
+  "status": "build_passed",
+  "finished_at_utc": "2026-11-03T06:41:47.274897+00:00",
+  "tool": "F:\\Vivado2021.2\\Xilinx\\Vivado\\2021.2",
+  "stage": "E:\\sw\\pl_r80htknk",
+  "native_zip_sha256": "0db6aac71b6e0fe096a49f177d837819772aa8bc5f9476baca5044dee5424e4b",
+  "build_script_sha256": "5ce912832159dd682530b858839c25be947af2ce0a5e0ffa3c0a22034bf377fa",
+  "launcher_sha256": "2c06e64f8198df7fbf8799eeeeb9fe7d63adf526beb2b69be39a719544266b53",
+  "artifacts": {
+    "drc_impl.rpt": "6490a1ca890a694cef60c9583bca23e6ad553de5962673d6eccb3e53a5c87f94",
+    "timing_summary_impl.rpt": "3433f262cc64ae4235d44a79814ba2ff38ca15b0b55fe3c67bff03119ab08fc4",
+    "top_module.bit": "337a7f34213a97589d0ad65cb7e775d125e04defcd7f8306b6c3f0a5bb73ef89",
+    "top_module.xsa": "817cf6229a3a27f39d023fc6e19d200cbcad26ed996594b3cb8181a92b100215",
+    "utilization_impl.rpt": "6dcc6c547e0c2c1ec67e520ca6a11facf82511e2168d65fbd89e3402c0a6930c",
+    "utilization_synth.rpt": "ef34db1eca74f8ea4d868392293c1f66e7c465df55ddb8e1f7297b2be6f64a80"
+  }
+}

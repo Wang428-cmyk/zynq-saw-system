@@ -1,0 +1,2 @@
+﻿track_id,valid_count,total_count,valid_rate_percent,frequency_mean_hz,frequency_std_hz,frequency_pp_hz,frequency_std_ppm,drift_hz_per_min,max_jump_hz,power_mean_dbm,power_std_db,power_pp_db
+1,1000,1000,100.0,433897174.04790354,2152.589965730093,11715.32972896099,4.961060118571873,7.6840648874045945,9365.744070470333,-69.73263497657543,0.13427506516089735,0.8297216884597418

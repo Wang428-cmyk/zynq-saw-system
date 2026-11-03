@@ -1,0 +1,35 @@
+{
+  "active": false,
+  "state": "stopped",
+  "message": "扫描配置已改变，当前稳定度任务已结束",
+  "session_id": "20260812_145130_f6cb76",
+  "session_path": "F:\\CCS_v10_WP\\SAW\\AD9361\\SAW_Upper_Computer\\StabilityData\\20260812_145130_f6cb76",
+  "target_rounds": 1000,
+  "completed_rounds": 753,
+  "progress_percent": 75.3,
+  "started_at": "2026-08-12T14:51:30.064+08:00",
+  "finished_at": "2026-08-12T14:57:12.206+08:00",
+  "writer_pending": 0,
+  "writer_error": null,
+  "tracks": [
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 433897168.79969865,
+      "last_frequency_hz": 433895874.29769146,
+      "metrics": {
+        "valid_count": 753,
+        "total_count": 753,
+        "valid_rate_percent": 100.0,
+        "frequency_mean_hz": 433897558.57031244,
+        "frequency_std_hz": 2489.295351254005,
+        "frequency_pp_hz": 11588.938483417034,
+        "frequency_std_ppm": 5.737057750350577,
+        "drift_hz_per_min": 26.223183770399167,
+        "max_jump_hz": 9426.132136106491,
+        "power_mean_dbm": -69.81398309741954,
+        "power_std_db": 0.12878390579960824,
+        "power_pp_db": 0.8663544920377433
+      }
+    }
+  ]
+}

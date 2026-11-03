@@ -1,0 +1,16 @@
+test_sg_and_fifteen_point_fit_recover_sub_bin_peak (test_server.FinePeakRefinementTests.test_sg_and_fifteen_point_fit_recover_sub_bin_peak) ... ok
+test_fetch_fine_result_merges_two_ps_chunks (test_server.FineResultProtocolTests.test_fetch_fine_result_merges_two_ps_chunks) ... ok
+test_parse_fine_result_packet (test_server.FineResultProtocolTests.test_parse_fine_result_packet) ... ok
+test_each_server_start_has_a_new_result_session (test_server.ResultSessionTests.test_each_server_start_has_a_new_result_session) ... ok
+test_second_http_server_cannot_reuse_the_same_port (test_server.ResultSessionTests.test_second_http_server_cannot_reuse_the_same_port) ... ok
+test_out_of_order_push_assembles_coarse_and_fine_without_start (test_server.ResultStreamTests.test_out_of_order_push_assembles_coarse_and_fine_without_start) ... ok
+test_server_updates_in_memory_settings_after_save (test_server.SavedSettingsTests.test_server_updates_in_memory_settings_after_save) ... ok
+test_settings_round_trip (test_server.SavedSettingsTests.test_settings_round_trip) ... ok
+test_five_value_median_skips_missing_rounds (test_server.StabilityManagerTests.test_five_value_median_skips_missing_rounds) ... ok
+test_tracks_peaks_by_frequency_and_writes_summary (test_server.StabilityManagerTests.test_tracks_peaks_by_frequency_and_writes_summary) ... ok
+test_config_error_reports_fatfs_detail (test_server.StorageErrorProtocolTests.test_config_error_reports_fatfs_detail) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.009s
+
+OK

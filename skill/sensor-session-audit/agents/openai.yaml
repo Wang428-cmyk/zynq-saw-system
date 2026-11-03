@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sensor Session Audit"
+  short_description: "Validate raw multi-channel sensor run records"
+  default_prompt: "Audit these sensor session CSV and JSON records and report which sessions completed and whether valid counts match."

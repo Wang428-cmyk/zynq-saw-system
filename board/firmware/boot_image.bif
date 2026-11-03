@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+  [bootloader] ../../build/generated/ps/fsbl.elf
+  top_module.bit
+  simulator.elf
+}

@@ -1,0 +1,54 @@
+{
+  "active": false,
+  "state": "completed",
+  "message": "已完成1000轮稳定度采集",
+  "session_id": "20260812_153310_d1bd76",
+  "session_path": "F:\\CCS_v10_WP\\SAW\\AD9361\\SAW_Upper_Computer\\StabilityData\\20260812_153310_d1bd76",
+  "target_rounds": 1000,
+  "completed_rounds": 1000,
+  "progress_percent": 100.0,
+  "started_at": "2026-08-12T15:33:10.351+08:00",
+  "finished_at": "2026-08-12T15:43:40.166+08:00",
+  "writer_pending": 0,
+  "writer_error": null,
+  "tracks": [
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 433895529.508987,
+      "last_frequency_hz": 433893404.306164,
+      "metrics": {
+        "valid_count": 1000,
+        "total_count": 1000,
+        "valid_rate_percent": 100.0,
+        "frequency_mean_hz": 433897118.3686842,
+        "frequency_std_hz": 2174.2315338637645,
+        "frequency_pp_hz": 12332.678198933601,
+        "frequency_std_ppm": 5.010937943165391,
+        "drift_hz_per_min": -7.063238096578881,
+        "max_jump_hz": 9772.039849698544,
+        "power_mean_dbm": -69.79796607279819,
+        "power_std_db": 0.13057541679217535,
+        "power_pp_db": 0.7777250812538341
+      }
+    },
+    {
+      "track_id": 2,
+      "reference_frequency_hz": 431438062.7666275,
+      "last_frequency_hz": 431438062.7666275,
+      "metrics": {
+        "valid_count": 1,
+        "total_count": 1000,
+        "valid_rate_percent": 0.1,
+        "frequency_mean_hz": 431438062.7666275,
+        "frequency_std_hz": 0.0,
+        "frequency_pp_hz": 0.0,
+        "frequency_std_ppm": 0.0,
+        "drift_hz_per_min": null,
+        "max_jump_hz": null,
+        "power_mean_dbm": -66.50297068917679,
+        "power_std_db": 0.0,
+        "power_pp_db": 0.0
+      }
+    }
+  ]
+}

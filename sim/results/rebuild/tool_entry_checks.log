@@ -1,0 +1,5 @@
+Python tool syntax: PASS
+build_ps.py --help: PASS
+build_pl.py --help: PASS
+build_all.py --help: PASS
+Unpaired XSA/bit rejected before build: PASS

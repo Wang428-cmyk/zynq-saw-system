@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "board_ip": "192.168.2.10",
+  "board_port": 4001,
+  "timeout_ms": 1500,
+  "config": {
+    "start_freq_hz": 430000000,
+    "bandwidth_hz": 10000000,
+    "step_hz": 100000,
+    "tx_time_us": 100,
+    "guard1_time_us": 2,
+    "rx_time_us": 30,
+    "guard2_time_us": 5,
+    "coherent_repetitions": 4,
+    "noncoherent_segments": 4,
+    "tx_sampling_freq_hz": 61440000,
+    "rx_sampling_freq_hz": 61440000,
+    "fine_enabled": 1,
+    "fine_half_bandwidth_hz": 100000,
+    "fine_step_hz": 1000,
+    "fine_lo_offset_hz": 1000000,
+    "coarse_lo_blind_hz": 300000,
+    "coarse_lo_guard_hz": 1500000
+  },
+  "ui_settings": {
+    "power_calibration_db": 0.0,
+    "lo_elimination": true,
+    "lo_blind_khz": 300.0
+  }
+}

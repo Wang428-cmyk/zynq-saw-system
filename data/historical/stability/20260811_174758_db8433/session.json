@@ -1,0 +1,73 @@
+{
+  "active": false,
+  "state": "stopped",
+  "message": "用户停止",
+  "session_id": "20260811_174758_db8433",
+  "session_path": "F:\\CCS_v10_WP\\SAW\\AD9361\\SAW_Upper_Computer\\StabilityData\\20260811_174758_db8433",
+  "target_rounds": 200,
+  "completed_rounds": 118,
+  "progress_percent": 59.0,
+  "started_at": "2026-08-11T17:47:58.433+08:00",
+  "finished_at": "2026-08-11T17:50:01.672+08:00",
+  "writer_pending": 0,
+  "writer_error": null,
+  "tracks": [
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 433891286.37877107,
+      "last_frequency_hz": 433891383.9416183,
+      "metrics": {
+        "valid_count": 118,
+        "total_count": 118,
+        "valid_rate_percent": 100.0,
+        "frequency_mean_hz": 433890145.87470466,
+        "frequency_std_hz": 3002.2509625837415,
+        "frequency_pp_hz": 14185.326949298382,
+        "frequency_std_ppm": 6.919380380329512,
+        "drift_hz_per_min": 193.61965177932666,
+        "max_jump_hz": 13576.73661917448,
+        "power_mean_dbm": -56.72926603523396,
+        "power_std_db": 0.12863205458348367,
+        "power_pp_db": 0.7149452428624912
+      }
+    },
+    {
+      "track_id": 1,
+      "reference_frequency_hz": 434725709.8282993,
+      "last_frequency_hz": 434725006.6193613,
+      "metrics": {
+        "valid_count": 118,
+        "total_count": 118,
+        "valid_rate_percent": 100.0,
+        "frequency_mean_hz": 434722045.17461807,
+        "frequency_std_hz": 3332.531230277362,
+        "frequency_pp_hz": 13763.097085535526,
+        "frequency_std_ppm": 7.665889658157912,
+        "drift_hz_per_min": 109.92365637879399,
+        "max_jump_hz": 9614.587525725365,
+        "power_mean_dbm": -68.12955403975148,
+        "power_std_db": 0.18803749535770478,
+        "power_pp_db": 0.8824237412115821
+      }
+    },
+    {
+      "track_id": 3,
+      "reference_frequency_hz": 431936567.8148085,
+      "last_frequency_hz": 431936567.8148085,
+      "metrics": {
+        "valid_count": 1,
+        "total_count": 118,
+        "valid_rate_percent": 0.847457627118644,
+        "frequency_mean_hz": 431936567.8148085,
+        "frequency_std_hz": 0.0,
+        "frequency_pp_hz": 0.0,
+        "frequency_std_ppm": 0.0,
+        "drift_hz_per_min": null,
+        "max_jump_hz": null,
+        "power_mean_dbm": -72.541352410587,
+        "power_std_db": 0.0,
+        "power_pp_db": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAW 扫频控制台</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>SAW 扫频控制台</h1>
+      <p>AD9361 · 915 MHz 谐振回波采集</p>
+    </div>
+    <div class="status-cluster">
+      <span id="connectionBadge" class="badge neutral"><i></i>未连接</span>
+      <span id="scanBadge" class="badge neutral">状态未知</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="connection-bar" aria-label="板卡连接">
+      <label>板卡 IP<input id="boardIp" value="192.168.2.10" inputmode="decimal"></label>
+      <label>UDP 端口<input id="boardPort" type="number" value="4001" min="1" max="65535"></label>
+      <label>超时 ms<input id="timeoutMs" type="number" value="1500" min="100" max="10000"></label>
+      <button id="statusButton" class="button secondary" type="button">读取状态</button>
+    </section>
+
+    <section class="live-strip" aria-label="实时状态">
+      <div><span>当前频点</span><strong id="currentFrequency">--</strong></div>
+      <div><span>频点索引</span><strong id="currentIndex">--</strong></div>
+      <div><span>板卡已生效：版本 / 积累 / 整轮</span><strong id="revision">--</strong></div>
+      <div><span>RX / TX</span><strong id="rfState">-- / --</strong></div>
+      <div><span>RX点数 / 容量</span><strong id="currentRxSamples">-- / --</strong></div>
+    </section>
+
+    <div class="workspace">
+      <form id="configForm" class="parameter-panel">
+        <div class="section-heading">
+          <div><h2>扫描参数</h2><p>下发配置后参数写入板卡eMMC，并自动连续扫描。</p></div>
+          <button id="restoreButton" class="text-button" type="button">恢复默认值</button>
+        </div>
+
+        <fieldset>
+          <legend>频率规划</legend>
+          <div class="field-grid four">
+            <label>最低频率 <span>MHz</span><input id="startMhz" type="number" value="912" min="70" max="4000" step="0.001" required></label>
+            <label>扫描带宽 <span>MHz</span><input id="bandwidthMhz" type="number" value="6" min="0.2" max="27" step="0.001" required></label>
+            <label>扫描步进 <span>kHz</span><input id="stepKhz" type="number" value="60" min="1" step="1" required></label>
+            <label>粗扫LO保护偏置 <span>kHz</span><input id="loGuardKhz" type="number" value="300" min="1" step="1" required></label>
+          </div>
+          <p class="fine-note">粗扫LO自动设置为“最低频率－保护偏置”，NCO只在正频偏一侧扫描，LO泄漏位于扫描范围之外。</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>自动精扫</legend>
+          <div class="fine-config-row">
+            <label class="option-checkbox">
+              <input id="enableFineScan" type="checkbox">
+              <span>启用精扫</span>
+            </label>
+            <label>精扫半带宽 <span>kHz</span><input id="fineHalfBandwidthKhz" type="number" value="100" min="1" step="1" required></label>
+            <label>精扫步进 <span>kHz</span><input id="fineStepKhz" type="number" value="1" min="1" step="1" required></label>
+          </div>
+          <p class="fine-note">粗扫结束后，对最多 4 个有效峰逐一精扫；RX LO 自动偏离目标 1 MHz。精扫超过 127 点时由 PS 分段采集并合并。</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>帧时序</legend>
+          <div class="field-grid four">
+            <label>TX <span>us</span><input id="txUs" type="number" value="10" min="1" step="1" required></label>
+            <label>Guard1 <span>us</span><input id="guard1Us" type="number" value="25" min="0" step="1" required></label>
+            <label>RX <span>us</span><input id="rxUs" type="number" value="20" min="1" step="1" required></label>
+            <label>Guard2 <span>us</span><input id="guard2Us" type="number" value="5" min="0" step="1" required></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>采集与积累</legend>
+          <div class="field-grid two">
+            <label>相干次数<input id="coherentCount" type="number" value="64" min="1" max="65535" step="1" required></label>
+            <label>非相干段数<input id="noncoherentCount" type="number" value="16" min="1" max="65535" step="1" required></label>
+          </div>
+          <div class="field-grid two compact-top">
+            <label>TX采样率 <span>MSPS</span><input id="txSampleRate" type="number" value="61.44" step="0.01" required></label>
+            <label>RX采样率 <span>MSPS</span><input id="rxSampleRate" type="number" value="61.44" step="0.01" required></label>
+          </div>
+          <div class="field-grid two compact-top">
+            <label>0 dBFS 对应输入功率 <span>dBm</span><input id="powerCalibrationDb" type="number" value="0" step="0.1" required></label>
+            <p class="calibration-note">RX2 固定为 20 dB 手动增益。接入已知功率单音后，用“已知 dBm − 峰值 dBFS”填写此值，才能得到板端估算 dBm。</p>
+          </div>
+        </fieldset>
+
+        <div class="action-bar">
+          <button id="applyButton" class="button primary" type="submit">保存配置并运行</button>
+          <button id="startButton" class="button success" type="button"><span aria-hidden="true">&#9654;</span> 开始扫描</button>
+          <button id="stopButton" class="button danger" type="button"><span aria-hidden="true">&#9632;</span> 停止扫描</button>
+          <button id="resultsButton" class="button secondary" type="button">读取扫描结果</button>
+        </div>
+      </form>
+
+      <aside class="summary-panel">
+        <h2>派生结果</h2>
+        <dl>
+          <div><dt>起始频率</dt><dd id="startFreq">912.000 MHz</dd></div>
+          <div><dt>终止频率</dt><dd id="stopFreq">918.000 MHz</dd></div>
+          <div><dt>频点数</dt><dd id="pointCount">101</dd></div>
+          <div><dt>单帧时间</dt><dd id="frameTime">60 us</dd></div>
+          <div><dt>每帧RX采样</dt><dd id="rxCaptureSamples">1,229 点</dd></div>
+          <div><dt>每点问询</dt><dd id="repetitions">1024 次</dd></div>
+          <div><dt>单频点时间</dt><dd id="pointTime">61.440 ms</dd></div>
+          <div><dt>粗扫时间</dt><dd id="scanTime">6.205 s</dd></div>
+          <div><dt>单峰精扫</dt><dd id="finePointCount">关闭</dd></div>
+          <div><dt>精扫时间</dt><dd id="fineScanTime">关闭</dd></div>
+          <div><dt>一轮总时间</dt><dd id="totalScanTime">6.205 s / 0 峰</dd></div>
+        </dl>
+        <div id="validationMessage" class="validation ok">参数可以下发</div>
+
+        <div class="event-log">
+          <div class="log-heading"><h2>操作记录</h2><button id="clearLog" class="text-button" type="button">清空</button></div>
+          <ol id="logList"></ol>
+        </div>
+      </aside>
+    </div>
+
+    <section class="result-panel" aria-label="SAW扫描结果">
+      <div class="section-heading">
+        <div><h2>功率曲线</h2><p>纵轴为经采样次数修正和一点校准后的接收功率，不再按本轮峰值归一化。</p></div>
+        <div class="result-metrics">
+          <div><span>估算峰值功率</span><strong id="peakPower">--</strong></div>
+          <div><span>峰值数字电平</span><strong id="peakDbfs">--</strong></div>
+          <div><span>谐振频率</span><strong id="resonanceFrequency">--</strong></div>
+          <div><span>峰值索引</span><strong id="peakIndex">--</strong></div>
+          <div><span>结果点数</span><strong id="resultPointCount">--</strong></div>
+        </div>
+      </div>
+      <div class="chart-controls" aria-label="曲线显示设置">
+        <label class="lo-checkbox">
+          <input id="loElimination" type="checkbox">
+          <span>LO消除</span>
+        </label>
+        <label class="lo-width">
+          盲区半宽
+          <span>kHz</span>
+          <input id="loBlindKhz" type="number" value="180" min="0" step="10">
+        </label>
+      </div>
+      <section class="peak-panel" aria-label="有效峰值">
+        <div class="peak-panel-heading">
+          <div>
+            <strong>有效峰值</strong>
+            <span>最多显示 4 个；LO 盲区始终不参与峰值识别</span>
+          </div>
+          <strong id="detectedPeakCount">0 / 4</strong>
+        </div>
+        <div id="peakList" class="peak-list"></div>
+      </section>
+      <div class="chart-wrap">
+        <canvas id="scanChart" width="1200" height="360" aria-label="频率与接收功率曲线，单位 dBm"></canvas>
+        <div id="chartReadout" class="chart-readout" hidden aria-live="polite">
+          <div><span>频率</span><strong id="selectedFrequency">--</strong></div>
+          <div><span>幅度</span><strong id="selectedPower">--</strong></div>
+        </div>
+        <div id="chartEmpty" class="chart-empty">完成一轮扫描后点击“读取扫描结果”</div>
+      </div>
+    </section>
+
+    <section id="fineResultPanel" class="result-panel fine-result-panel" aria-label="SAW精扫结果" hidden>
+      <div class="section-heading">
+        <div>
+          <h2>精扫曲线</h2>
+          <p>每个粗扫有效峰单独显示；灰线为PS原始曲线，蓝线为11点SG平滑曲线，标记为15点局部拟合峰。</p>
+        </div>
+        <strong id="fineResultCount">0 个峰</strong>
+      </div>
+      <div id="fineResultSummary" class="fine-result-summary" aria-label="精扫峰值结果汇总"></div>
+      <div id="fineCharts" class="fine-chart-grid"></div>
+    </section>
+
+    <section class="result-panel stability-panel" aria-label="精扫峰值稳定度检查">
+      <div class="section-heading">
+        <div>
+          <h2>精扫峰值稳定度</h2>
+          <p>连续记录每轮精扫峰值，按频率跟踪最多4路；CSV由后台线程写入 StabilityData 文件夹。</p>
+        </div>
+        <strong id="stabilityState">未开始</strong>
+      </div>
+      <div class="stability-controls">
+        <label>
+          目标轮数
+          <input id="stabilityTarget" type="number" value="1000" min="1" max="100000" step="1">
+        </label>
+        <button id="stabilityStart" class="button success" type="button">开始稳定度采集</button>
+        <button id="stabilityStop" class="button danger" type="button" disabled>停止记录</button>
+        <label>
+          查看峰值轨迹
+          <select id="stabilityTrack"><option value="1">峰值轨迹 1</option></select>
+        </label>
+      </div>
+      <div class="stability-progress" aria-label="稳定度采集进度">
+        <div><span id="stabilityProgressBar"></span></div>
+        <strong id="stabilityProgressText">0 / 1000 轮</strong>
+      </div>
+      <p id="stabilityMessage" class="stability-message">点击开始后，从下一轮完整精扫结果起记录。</p>
+      <div id="stabilityTrackCards" class="stability-track-cards"></div>
+      <div class="stability-statistics">
+        <div><span>有效率</span><strong id="stabilityValidRate">--</strong></div>
+        <div><span>最近5轮中值频率</span><strong id="stabilityMedianFrequency">--</strong></div>
+        <div><span>频率均值</span><strong id="stabilityFrequencyMean">--</strong></div>
+        <div><span>频率标准差</span><strong id="stabilityFrequencyStd">--</strong></div>
+        <div><span>频率峰峰值</span><strong id="stabilityFrequencyPp">--</strong></div>
+        <div><span>漂移斜率</span><strong id="stabilityDrift">--</strong></div>
+        <div><span>最大跳变</span><strong id="stabilityMaxJump">--</strong></div>
+        <div><span>幅度均值</span><strong id="stabilityPowerMean">--</strong></div>
+        <div><span>幅度标准差</span><strong id="stabilityPowerStd">--</strong></div>
+      </div>
+      <div class="stability-charts">
+        <article>
+          <h3>相对频率偏移</h3>
+          <div class="trend-legend" aria-label="频率偏移曲线图例">
+            <span><i class="raw"></i>每轮拟合值</span>
+            <span><i class="median"></i>最近5轮中值</span>
+          </div>
+          <canvas id="stabilityFrequencyChart" width="1200" height="260" aria-label="精扫峰值相对频率随轮次变化"></canvas>
+        </article>
+        <article>
+          <h3>峰值幅度变化</h3>
+          <canvas id="stabilityPowerChart" width="1200" height="260" aria-label="精扫峰值幅度随轮次变化"></canvas>
+        </article>
+      </div>
+      <p class="stability-path">保存位置：<strong id="stabilityPath">--</strong></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

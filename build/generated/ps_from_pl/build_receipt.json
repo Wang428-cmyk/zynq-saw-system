@@ -1,0 +1,24 @@
+{
+  "status": "build_passed",
+  "started_at_utc": "2026-11-03T06:41:47.576093+00:00",
+  "finished_at_utc": "2026-11-03T06:43:02.439265+00:00",
+  "tool": "Vitis/XSCT 2021.2",
+  "vitis_home": "F:\\Vivado2021.2\\Xilinx\\Vitis\\2021.2",
+  "stage": "E:\\sw\\ps_ne6cvmm2",
+  "inputs": {
+    "native_ps_zip_sha256": "0a67991c1464f581f20829fc37e4f492be6549c157b4d84df6166f4659636172",
+    "xsa_sha256": "817cf6229a3a27f39d023fc6e19d200cbcad26ed996594b3cb8181a92b100215",
+    "bit_sha256": "337a7f34213a97589d0ad65cb7e775d125e04defcd7f8306b6c3f0a5bb73ef89",
+    "build_script_sha256": "9201996cd553443f71435cbf8a31f3ae8fbb718b0710b79bab03f49ececda075",
+    "bsp_config_sha256": "6fcc800ce5181db2c9dc5c8686db464c78e68b898516c6db37613245d08fff04",
+    "launcher_sha256": "c75144c0307791c3d0ac39b97b2ef4091b1a215cf63264fd96641e54e61a72b5"
+  },
+  "artifacts": {
+    "saw_app.elf": "4a4390a2f571cf80bbe8d48d4212c2b88dda099a92a3428120fe2aea4a091cf3",
+    "fsbl.elf": "6ac89ddab36b47485669c196ed2f9d6068b92981b6a80574c1c3a69e2f52eda4",
+    "top_module.xsa": "817cf6229a3a27f39d023fc6e19d200cbcad26ed996594b3cb8181a92b100215",
+    "top_module.bit": "337a7f34213a97589d0ad65cb7e775d125e04defcd7f8306b6c3f0a5bb73ef89",
+    "BOOT.BIN": "0992a9a935f6397dca6f0d9a1f10138df6c39ffc4f576778f232791871d62713",
+    "boot_image.bif": "9eba66dbc5fe24066dc4b2a57a3b98e5261a3eb6cdaebad0b0839ea465ca08bb"
+  }
+}

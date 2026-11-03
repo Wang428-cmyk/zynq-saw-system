@@ -1,0 +1,15 @@
+{
+  "role": "historical reference only; active rebuild uses scripts/bsp_config.tcl",
+  "files": [
+    {
+      "file": "standalone_2021_network.mss",
+      "original_source": "材料/材料/PL/Single_Channel_Simulator/Single_Channel_Simulator_Vitis/Simulator_Platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss",
+      "sha256": "6f1201e502ad9052b28536ab00a781c50f835a21f04154b5cc714246e2579275"
+    },
+    {
+      "file": "standalone_legacy.mss",
+      "original_source": "材料/材料/PL/Single_Channel_Simulator/Single_Channel_Simulator_Vitis/Simulator_Platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss",
+      "sha256": "04f85cd70e678fdf75d52eae014f41c5fa665aca4a61570dd358f4ab18c8bf76"
+    }
+  ]
+}

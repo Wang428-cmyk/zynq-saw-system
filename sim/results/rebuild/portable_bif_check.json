@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "bootgen": "2021.2",
+  "bif": "build/generated/ps/boot_image.bif",
+  "portable_bif_passed": true,
+  "original_boot_sha256": "2f2abb3af49bb6e9a3369237069d024babd9bb5941bb530bba2acbfd73b43bab",
+  "recreated_boot_sha256": "2f2abb3af49bb6e9a3369237069d024babd9bb5941bb530bba2acbfd73b43bab"
+}

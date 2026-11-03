@@ -1,0 +1,10 @@
+{
+  "source_document": "技术文档.docx",
+  "source_document_sha256": "90ded534073bf98c65760b5b054363f410c5a9703fe5a3e3d9daf013cebcb358",
+  "technical_report_docx": "design_report.docx",
+  "technical_report_docx_sha256": "872a9668aca89a95efcdb274d97d4a3a6be5d538cabac8a799be3a283b59a39c",
+  "technical_report_pdf": "design_report.pdf",
+  "technical_report_pdf_sha256": "fdc117da21ffe959b62f130b248ffae62a2dfe0b8fc4b3cfe876b728823c2e95",
+  "pdf_pages": 16,
+  "pdf_conversion": "Microsoft Word ExportAsFixedFormat"
+}

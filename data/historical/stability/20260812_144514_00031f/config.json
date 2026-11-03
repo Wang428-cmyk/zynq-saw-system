@@ -1,0 +1,32 @@
+{
+  "session_id": "20260812_144514_00031f",
+  "target_rounds": 200,
+  "started_at": "2026-08-12T14:45:14.696+08:00",
+  "settings": {
+    "config": {
+      "start_freq_hz": 430000000,
+      "bandwidth_hz": 5000000,
+      "step_hz": 50000,
+      "tx_time_us": 100,
+      "guard1_time_us": 2,
+      "rx_time_us": 30,
+      "guard2_time_us": 5,
+      "coherent_repetitions": 4,
+      "noncoherent_segments": 4,
+      "tx_sampling_freq_hz": 61440000,
+      "rx_sampling_freq_hz": 61440000,
+      "fine_enabled": 1,
+      "fine_half_bandwidth_hz": 50000,
+      "fine_step_hz": 1000,
+      "fine_lo_offset_hz": 1000000,
+      "coarse_lo_blind_hz": 300000,
+      "coarse_lo_guard_hz": 1500000
+    },
+    "ui_settings": {
+      "power_calibration_db": 0,
+      "lo_elimination": true,
+      "lo_blind_khz": 300
+    }
+  },
+  "notes": "每轮按精扫峰值频率跟踪，最多4路；缺失峰保留无效记录。"
+}

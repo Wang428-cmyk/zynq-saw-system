@@ -1,0 +1,388 @@
+{
+  "input_session_count": 28,
+  "states": {
+    "completed": 15,
+    "stopped": 11,
+    "unknown": 2
+  },
+  "sessions_with_issues": 2,
+  "total_observation_rows": 19530,
+  "sessions": [
+    {
+      "session_id": "20260811_173911_d0a816",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 600,
+      "track_count": 1,
+      "valid_rows": 295,
+      "issue_count": 2,
+      "issues": [
+        "track_1_total_count_above_reported:600>200",
+        "track_1_valid_count_above_reported:295>86"
+      ],
+      "notes": [
+        "multiple_records_per_round_track:400"
+      ]
+    },
+    {
+      "session_id": "20260811_174258_9b91cc",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 200,
+      "track_count": 1,
+      "valid_rows": 198,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260811_174758_db8433",
+      "state": "stopped",
+      "target_rounds": 200,
+      "completed_rounds": 118,
+      "record_rows": 347,
+      "track_count": 2,
+      "valid_rows": 237,
+      "issue_count": 2,
+      "issues": [
+        "track_1_total_count_above_reported:236>118",
+        "track_1_valid_count_above_reported:236>118"
+      ],
+      "notes": [
+        "multiple_records_per_round_track:118",
+        "track_3_total_count_coverage:111/118"
+      ]
+    },
+    {
+      "session_id": "20260811_175025_4dce9d",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 400,
+      "track_count": 2,
+      "valid_rows": 400,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260811_175512_bd5005",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 200,
+      "track_count": 1,
+      "valid_rows": 187,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_101037_984ca1",
+      "state": "stopped",
+      "target_rounds": 200,
+      "completed_rounds": 192,
+      "record_rows": 224,
+      "track_count": 4,
+      "valid_rows": 216,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:11/192",
+        "track_3_total_count_coverage:11/192",
+        "track_4_total_count_coverage:10/192"
+      ]
+    },
+    {
+      "session_id": "20260812_101842_50a722",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 200,
+      "track_count": 1,
+      "valid_rows": 200,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_104844_857a56",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 218,
+      "track_count": 4,
+      "valid_rows": 182,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:6/200",
+        "track_3_total_count_coverage:6/200",
+        "track_4_total_count_coverage:6/200"
+      ]
+    },
+    {
+      "session_id": "20260812_105628_f00df1",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 328,
+      "track_count": 4,
+      "valid_rows": 62,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:49/200",
+        "track_3_total_count_coverage:49/200",
+        "track_4_total_count_coverage:30/200"
+      ]
+    },
+    {
+      "session_id": "20260812_110204_8abb81",
+      "state": "stopped",
+      "target_rounds": 200,
+      "completed_rounds": 199,
+      "record_rows": 597,
+      "track_count": 3,
+      "valid_rows": 597,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_110715_030e10",
+      "state": "stopped",
+      "target_rounds": 200,
+      "completed_rounds": 74,
+      "record_rows": 222,
+      "track_count": 3,
+      "valid_rows": 222,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_112827_450ce3",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 600,
+      "track_count": 3,
+      "valid_rows": 598,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_144305_b62631",
+      "state": "stopped",
+      "target_rounds": 200,
+      "completed_rounds": 142,
+      "record_rows": 426,
+      "track_count": 3,
+      "valid_rows": 426,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_144514_00031f",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 600,
+      "track_count": 3,
+      "valid_rows": 600,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_144950_afb3a7",
+      "state": "completed",
+      "target_rounds": 200,
+      "completed_rounds": 200,
+      "record_rows": 200,
+      "track_count": 1,
+      "valid_rows": 200,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_145130_f6cb76",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 753,
+      "record_rows": 753,
+      "track_count": 1,
+      "valid_rows": 753,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_152100_28ae59",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 39,
+      "record_rows": 39,
+      "track_count": 1,
+      "valid_rows": 39,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_152126_0af28c",
+      "state": "completed",
+      "target_rounds": 1000,
+      "completed_rounds": 1000,
+      "record_rows": 1000,
+      "track_count": 1,
+      "valid_rows": 1000,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260812_153310_d1bd76",
+      "state": "completed",
+      "target_rounds": 1000,
+      "completed_rounds": 1000,
+      "record_rows": 1667,
+      "track_count": 2,
+      "valid_rows": 1001,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:667/1000"
+      ]
+    },
+    {
+      "session_id": "20260812_155121_a24500",
+      "state": "completed",
+      "target_rounds": 1000,
+      "completed_rounds": 1000,
+      "record_rows": 1611,
+      "track_count": 2,
+      "valid_rows": 1016,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:611/1000"
+      ]
+    },
+    {
+      "session_id": "20260812_162055_ab2163",
+      "state": "completed",
+      "target_rounds": 1000,
+      "completed_rounds": 1000,
+      "record_rows": 1000,
+      "track_count": 1,
+      "valid_rows": 1000,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260813_153356_5491f4",
+      "state": "completed",
+      "target_rounds": 1000,
+      "completed_rounds": 1000,
+      "record_rows": 2590,
+      "track_count": 3,
+      "valid_rows": 887,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:822/1000",
+        "track_3_total_count_coverage:768/1000"
+      ]
+    },
+    {
+      "session_id": "20260813_154956_5378a8",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 681,
+      "record_rows": 1321,
+      "track_count": 4,
+      "valid_rows": 621,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_2_total_count_coverage:524/681",
+        "track_3_total_count_coverage:59/681",
+        "track_4_total_count_coverage:57/681"
+      ]
+    },
+    {
+      "session_id": "20260813_163233_e14daf",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 222,
+      "record_rows": 887,
+      "track_count": 4,
+      "valid_rows": 885,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "track_4_total_count_coverage:221/222"
+      ]
+    },
+    {
+      "session_id": "20260813_164001_683e42",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 245,
+      "record_rows": 980,
+      "track_count": 4,
+      "valid_rows": 975,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260813_164848_918e73",
+      "state": "unknown",
+      "target_rounds": "",
+      "completed_rounds": "",
+      "record_rows": 1172,
+      "track_count": 4,
+      "valid_rows": 1164,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "missing_session_json"
+      ]
+    },
+    {
+      "session_id": "20260813_165847_fe0e85",
+      "state": "stopped",
+      "target_rounds": 1000,
+      "completed_rounds": 2,
+      "record_rows": 8,
+      "track_count": 4,
+      "valid_rows": 8,
+      "issue_count": 0,
+      "issues": [],
+      "notes": []
+    },
+    {
+      "session_id": "20260813_165853_58f8f9",
+      "state": "unknown",
+      "target_rounds": "",
+      "completed_rounds": "",
+      "record_rows": 1140,
+      "track_count": 4,
+      "valid_rows": 1140,
+      "issue_count": 0,
+      "issues": [],
+      "notes": [
+        "missing_session_json"
+      ]
+    }
+  ]
+}

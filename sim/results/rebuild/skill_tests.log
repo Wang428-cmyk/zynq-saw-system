@@ -1,0 +1,8 @@
+test_discrepancy_reported (test_audit_sessions.AuditTests.test_discrepancy_reported) ... ok
+test_flags (test_audit_sessions.AuditTests.test_flags) ... ok
+test_one_session (test_audit_sessions.AuditTests.test_one_session) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.063s
+
+OK
